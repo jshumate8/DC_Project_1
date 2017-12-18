@@ -15,7 +15,6 @@ const txtEmail = document.getElementById('txtEmail')
 const txtPassword = document.getElementById('txtPassword')
 const btnLogin = document.getElementById('btnLogin')
 const btnSignup = document.getElementById('btnSignup')
-const btnLogout = document.getElementById('btnLogout')
 
 
 //Add Login event
@@ -29,6 +28,7 @@ btnLogin.addEventListener('click', e => {
 const promise = auth.signInWithEmailAndPassword(email, pass)
 
 promise.catch(e => console.log(e.message))
+promise.catch(e => alert("User not found"))
 
 })
 
@@ -46,18 +46,15 @@ const promise = auth.createUserWithEmailAndPassword(email, pass)
 
 })
 
-//Add logout event
-btnLogout.addEventListener('click', e => {
-    firebase.auth().signOut();
-})
 
 //Add a realtime listener
 
 firebase.auth().onAuthStateChanged(firebaseUser => {
     if (firebaseUser) {
         console.log(firebaseUser)
-        btnLogout.classList.remove('hide')
-    }
+        window.location = '../user_page/user_home.html'; //After successful login, user will be redirected to home.html
+            }
+          
     else {
         console.log('Not logged in')
         btnLogout.classList.add('hide')

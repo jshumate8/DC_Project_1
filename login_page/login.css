@@ -7,7 +7,7 @@ html body {
 /* input boxes*/
 
 #txtEmail {
-width: 50vh;
+width: 400px;
 padding: 12px 20px;
 margin: 8px 0;
 box-sizing: border-box;
@@ -22,7 +22,7 @@ font-size: 16pt;
     }  
 
 #txtPassword {
-width: 50vh;
+width: 400px;
 padding: 12px 20px;
 margin: 8px 0;
 box-sizing: border-box;
@@ -74,8 +74,8 @@ background-color: #f2860a;
 
 }
 
-.btn-action-hide {
-
+.hide {
+display: none;
 }
 
 /* Main Div Container*/
