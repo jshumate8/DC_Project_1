@@ -1,16 +1,21 @@
 /* General formatting*/
 html body {
     height: 100%;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+
+}
 
 /* input boxes*/
 
 #txtEmail {
-width: 400px;
+width: 30rem;
 padding: 12px 20px;
 margin: 8px 0;
-box-sizing: border-box;
 font-size: 16pt;
     
 }
@@ -22,10 +27,9 @@ font-size: 16pt;
     }  
 
 #txtPassword {
-width: 400px;
+width: 30rem;
 padding: 12px 20px;
 margin: 8px 0;
-box-sizing: border-box;
 font-size: 16pt;
 }
 
@@ -45,13 +49,14 @@ text-align: center;
 text-decoration: none;
 display: inline-block;
 font-size: 16px;
+background: linear-gradient(to bottom right, #f79c35, #f2860a);
+
 
     }
 
       
 
 #btnLogin {
-background-color: #f2860a;
 
 }
 
@@ -117,4 +122,37 @@ flex-direction: column;
 .btns-container {
 display: flex;
 justify-content: space-between
+}
+
+@media screen and (max-width: 425px) {
+ 
+.main-container{
+justify-content: center;
+align-items: center;
+     
+ }
+
+.login-container {
+width: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+ }
+#txtEmail {
+width: 25rem;
+}
+
+#txtPassword {
+   width: 25rem;
+}
+.btns-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+.btn {
+    margin: 
+}
 }
