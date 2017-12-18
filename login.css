@@ -1,0 +1,120 @@
+/* General formatting*/
+html body {
+    height: 100%;
+}
+
+
+/* input boxes*/
+
+#txtEmail {
+width: 50vh;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+font-size: 16pt;
+    
+}
+#txtEmail:focus {
+    border-color: #f2860a;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    }  
+
+#txtPassword {
+width: 50vh;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+font-size: 16pt;
+}
+
+#txtPassword:focus {
+    border-color: #f2860a;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    } 
+
+/*Button IDs*/
+.btn {
+border-radius: 10px;
+border: none;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+
+    }
+
+      
+
+#btnLogin {
+background-color: #f2860a;
+
+}
+
+#btnSignup {
+
+}
+
+#btnLogout {
+
+}
+
+/*btn Classes*/
+
+
+.btn-action {
+
+}
+
+.btn-secondary {
+
+}
+
+.btn-action-hide {
+
+}
+
+/* Main Div Container*/
+.main-container {
+    
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: black;
+    background: -webkit-gradient(linear, left top, right bottom, from(black), to(rgb(94, 92, 92)));
+    background: -webkit-linear-gradient(bottom right, black, rgb(94, 92, 92));
+    background: -moz-linear-gradient(bottom right, black, rgb(94, 92, 92));
+    background: linear-gradient(to bottom right, black, rgb(94, 92, 92));
+}
+
+.login-container {
+display: flex;
+flex-direction: column;    
+
+}
+
+.btns-container {
+display: flex;
+justify-content: space-between
+}
